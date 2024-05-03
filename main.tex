@@ -1,0 +1,46 @@
+\documentclass{xduugthesis}
+\usepackage{booktabs}
+\usepackage{amsthm,amsmath,amssymb,lipsum}
+\usepackage{mathrsfs}
+\usepackage{anyfontsize}
+\usepackage{graphicx} 
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\usepackage{setspace}
+\xdusetup{
+  info = {
+    title = {template},
+    author = {template},
+    department = {template},
+    major = {template},
+    class-id = {template},
+    student-id = {template},
+    supervisor = {template},
+    bib-resource = {ref.bib},
+    abstract = {chapters/abstract_zh.tex},
+    abstract* = {chapters/abstract_en.tex},
+    keywords = {template},
+    keywords* = {template},
+    acknowledgements = {chapters/acknowledge.tex}
+    }
+  }
+\begin{document}
+
+% 临时解决\cite{}没有自动补全提示的问题
+% 详见 https://github.com/note286/xduts/discussions/157
+\iffalse
+  \addbibresource{ref.bib}
+\fi
+
+
+\include{chapters/intro/intro}
+
+\include{chapters/method/method}
+
+\include{chapters/test/test}
+
+\include{chapters/conclusion/conclusion}
+
+
+\end{document}
